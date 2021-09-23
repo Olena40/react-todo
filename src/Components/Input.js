@@ -1,4 +1,8 @@
-import React from "react";
+
+
+import React from 'react'
+
+
 
 function Input({ handleInput, handleSubmit, value }) {
   return (
@@ -9,3 +13,5 @@ function Input({ handleInput, handleSubmit, value }) {
   );
 }
 export default Input;
+
+
