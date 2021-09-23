@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import DatePicker from './Components/DatePicker.js'
 
 import { useState } from 'react';
 import Input from './Components/Input';
@@ -21,17 +21,21 @@ function App() {
   function handleSubmit(e) {
     e.preventDefault(); 
     setTodos([...todos, value]);
-setValue ('');
+    setValue("");
+    
   }
-  
-
   return (
+
     <div className="App">
-      <p>ToDo</p>
+
      
       <form >
-       
-      <Input handleInput={handleInput} handleSubmit={handleSubmit} value={value} />
+ 
+      <DatePicker />
+      <p>ToDo</p>
+      
+      <Input handleInput={handleInput} handleSubmit={handleSubmit} value = {value} />
+
       <ul className="TodoListe">
         {todos && todos.map((todo, index) => <li key={index} className='li'>
         <span >
@@ -47,6 +51,11 @@ setValue ('');
       </form>
     </div>
   );
-}
 
+
+}
 export default App;
+
+
+
+
