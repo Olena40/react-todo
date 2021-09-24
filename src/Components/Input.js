@@ -12,6 +12,7 @@ function Input({ handleInput, handleSubmit, value }) {
     </form>
   );
 }
+
 export default Input;
 
 
