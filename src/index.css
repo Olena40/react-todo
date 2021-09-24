@@ -29,3 +29,7 @@ code {
   margin-left: 40%;
   margin-right: 40%;
 }
+
+.li active {
+  color: #fa5858;
+}

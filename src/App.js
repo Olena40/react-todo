@@ -4,6 +4,8 @@ import DatePicker from './Components/DatePicker.js'
 
 import { useState } from 'react';
 import Input from './Components/Input';
+import { FcPlus } from 'react-icons/fc';
+
 
 
 function App() {
@@ -17,23 +19,31 @@ function App() {
     setValue(e.target.value);
   }
    
-
   function handleSubmit(e) {
     e.preventDefault(); 
-    setTodos([...todos, value]);
-    setValue("");
-    
-  }
+     
+    if (value) {
+      setTodos([...todos, value]);
+      setValue("");
+    } else {
+      alert("Please enter a task");
+    }
+  };
+  
+  //toggle class active
+
+
+  
   return (
 
     <div className="App">
 
      
-      <form >
+     <form>
  
       <DatePicker />
       <p>ToDo</p>
-      
+      <p>  </p>
       <Input handleInput={handleInput} handleSubmit={handleSubmit} value = {value} />
 
       <ul className="TodoListe">
@@ -41,21 +51,23 @@ function App() {
         <span >
           <input 
           type='checkbox' />
-             &nbsp; 
+             &nbsp; &nbsp; 
       {todo} 
+  
       &nbsp;
       </span>
+      &nbsp;
+      <button> <FcPlus/ ></button>
       <button className='rm' >&times;</button>
           </li>)}
       </ul>
+
       </form>
     </div>
   );
 
 
 }
+
 export default App;
-
-
-
 
