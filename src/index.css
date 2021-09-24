@@ -26,10 +26,31 @@ code {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 38%;
+  margin-right: 42%;
 }
 
 .li active {
   color: #fa5858;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+#inp {
+  height: 30px;
+}
+
+#span {
+  text-align: end;
+}
+
+ul li del {
+  text-decoration: none;
+}
+ul li input[type="checkbox"]:checked ~ del {
+  text-decoration: line-through;
+  color: blue;
 }

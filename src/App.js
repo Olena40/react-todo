@@ -9,7 +9,7 @@ import { FcPlus } from 'react-icons/fc';
 
 
 function App() {
-
+ 
 
   const [value, setValue] = useState("");
   const [todos, setTodos] = useState([]);
@@ -26,38 +26,34 @@ function App() {
       setTodos([...todos, value]);
       setValue("");
     } else {
-      alert("Please enter a task");
+      alert("Please fill in the blanks");
     }
   };
   
-  //toggle class active
-
-
+  //
   
   return (
 
     <div className="App">
 
-     
      <form>
  
       <DatePicker />
       <p>ToDo</p>
-      <p>  </p>
+    
       <Input handleInput={handleInput} handleSubmit={handleSubmit} value = {value} />
 
       <ul className="TodoListe">
-        {todos && todos.map((todo, index) => <li key={index} className='li'>
+        {todos && todos.map((todo, index) => <li key={index}  className='li'    >
         <span >
           <input 
-          type='checkbox' />
+          type='checkbox'  />
              &nbsp; &nbsp; 
-      {todo} 
-  
+     <del> {todo}   </del> 
       &nbsp;
       </span>
+
       &nbsp;
-      <button> <FcPlus/ ></button>
       <button className='rm' >&times;</button>
           </li>)}
       </ul>
