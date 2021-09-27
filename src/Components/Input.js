@@ -14,7 +14,7 @@ function Input({ handleInput, handleSubmit, value }) {
 					type="text"
 					value={value}
 					onChange={handleInput}
-					style={{border: '2px solid', width: '17%', height: '15px'}}
+					style={{border: '2px solid', width: '50%', height: '15px'}}
 				/>
 				<button
 					type="submit"
@@ -29,6 +29,6 @@ function Input({ handleInput, handleSubmit, value }) {
 	
 		</form>
 	);
-
+	}
 
 export default Input;

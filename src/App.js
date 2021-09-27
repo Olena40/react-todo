@@ -35,6 +35,7 @@ function App() {
   return (
 
     <div className="App">
+    <div className="Container">
 
      <form>
  
@@ -59,6 +60,7 @@ function App() {
       </ul>
 
       </form>
+      </div>
     </div>
   );
 
