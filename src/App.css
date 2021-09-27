@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gluten&display=swap");
 .App {
   text-align: center;
 }
@@ -49,12 +49,7 @@
 }
 
 .TodoListe {
-  
   align-items: center;
   width: 93%;
-  height: 30px; 
+  height: 30px;
 }
-
-
-
-
