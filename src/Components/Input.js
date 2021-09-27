@@ -1,5 +1,6 @@
 
 
+
 import React from "react";
 import { FcPlus } from "react-icons/fc";
 
@@ -28,6 +29,6 @@ function Input({ handleInput, handleSubmit, value }) {
 	
 		</form>
 	);
-}
+
 
 export default Input;
