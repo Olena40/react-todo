@@ -33,3 +33,14 @@ code {
 .li active {
   color: #fa5858;
 }
+
+.Container {
+  background-image: linear-gradient(180deg, #d4d0c2, #74483c);
+  color: white;
+  font-family: "Lobster", sans-serif;
+  min-height: 80vh;
+  min-width: 400px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
